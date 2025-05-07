@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Relatório Projeto 11 - Matrizes de Adjacência</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Projeto 11 - Matrizes de Adjacência</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Relatório - Projeto 11</h1>
-  <h2>Propriedades da Matriz do Metrô</h2>
-  <ul>
-    <li>Reflexiva: <span class="false">Não</span></li>
-    <li>Simétrica: <span class="true">Sim</span></li>
-    <li>Antissimétrica: <span class="false">Não</span></li>
-    <li>Assimétrica: <span class="false">Não</span></li>
-    <li>Transitiva: <span class="false">Não</span></li>
-  </ul>
+    <h1>Projeto 11: Análise de Matrizes de Adjacência</h1>
+    <div class="container">
 
-  <h2>Composição (Metrô ◦ Ônibus)</h2>
-  <table>
-    <thead><tr><th></th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr></thead>
-    <tbody>
-      <tr><th>0</th><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
-      <tr><th>1</th><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
-      <tr><th>2</th><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
-      <tr><th>3</th><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
-      <tr><th>4</th><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
-      <tr><th>5</th><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
-    </tbody>
-  </table>
+        <div class="matrix-container">
+            <div class="matrix">
+                <h3>Matriz do Metrô</h3>
+                <pre id="metro-matrix"></pre>
+            </div>
 
-  <h2>Fecho Reflexivo</h2>
-  <!-- Coloque a tabela do fecho reflexivo aqui se desejar -->
-  <h2>Fecho Simétrico</h2>
-  <!-- Coloque a tabela do fecho simétrico aqui se desejar -->
-  <h2>Fecho Transitivo</h2>
-  <!-- Coloque a tabela do fecho transitivo aqui se desejar -->
+            <div class="matrix">
+                <h3>Composição Metrô → Ônibus</h3>
+                <pre id="composition-matrix"></pre>
+            </div>
+        </div>
 
-  <script src="script.js"></script>
+        <div class="result">
+            <div class="result-item">
+                <h3>Reflexiva?</h3>
+                <p id="reflexive">...</p>
+            </div>
+            <div class="result-item">
+                <h3>Simétrica?</h3>
+                <p id="symmetric">...</p>
+            </div>
+            <div class="result-item">
+                <h3>Antissimétrica?</h3>
+                <p id="antisymmetric">...</p>
+            </div>
+            <div class="result-item">
+                <h3>Assimétrica?</h3>
+                <p id="asymmetric">...</p>
+            </div>
+            <div class="result-item">
+                <h3>Transitiva?</h3>
+                <p id="transitive">...</p>
+            </div>
+        </div>
+
+        <div class="matrix-container" style="margin-top: 50px;">
+            <div class="matrix">
+                <h3>Fecho Reflexivo</h3>
+                <pre id="reflexive-closure"></pre>
+            </div>
+            <div class="matrix">
+                <h3>Fecho Simétrico</h3>
+                <pre id="symmetric-closure"></pre>
+            </div>
+            <div class="matrix">
+                <h3>Fecho Transitivo</h3>
+                <pre id="transitive-closure"></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
